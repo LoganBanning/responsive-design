@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+
+
+body {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+}

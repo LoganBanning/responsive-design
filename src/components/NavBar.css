@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab&family=Style+Script&display=swap');
+
+nav {
+  background-color: #1d1a05;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 50%;
+}
+
+li {
+  cursor: pointer;
+  color: white;
+}
+
+li:hover {
+  color: #ffc800;
+}
+
+h1 {
+  margin-left: 70px;
+  color: #ffc800;
+  font-family: 'Style Script', cursive;
+  font-size: 40px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.menu-btn {
+  height: 50px;
+  width: 75px;
+  display: none;
+  font-weight: bold;
+  background-color: #1d1a05;
+  border-radius: 15px;
+  border: 2px white solid;
+  color: white;
+  cursor: pointer;
+}
+
+.open-menu-btn {
+  height: 50px;
+  width: 75px;
+  display: none;
+  font-weight: bold;
+  background-color: #1d1a05;
+  border-radius: 15px;
+  border: 2px white solid;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  right: -83px;
+  top: -18px;
+  animation: spinLeft 2s ease;
+  animation-fill-mode: forwards;
+}
+
+menu {
+  position: fixed;
+  height: 300px;
+  width: 100vw;
+  background-color: #1d1a05;
+  color: white;
+  border: 1px solid grey;
+  margin: 0;
+  left: 0;
+  top: -300px;
+  padding: 0;
+  transition-property: top;
+  transition-duration: 1s;
+}
+
+.menu-open {
+  top: 0;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-text {
+  display: block;
+}
+
+@media (max-width: 925px) {
+  ul {
+    width: 65%;
+  }
+  h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 735px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .open-menu-btn {
+    display: block;
+  }
+
+  ul {
+    display: none;
+  }
+}
+
+@keyframes spinLeft {
+  0% {
+    right: -83px;
+    top: -18px;
+    transform: rotate(0deg);
+  }
+  50% {
+    height: 75px;
+    width: 100px;
+    transform: rotate(360deg);
+  }
+  100% {
+    right: 83px;
+    top: 18px;
+  }
+}
